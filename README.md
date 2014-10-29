@@ -1,4 +1,4 @@
-Sunrise2013用環境
+Sunrise2014用環境
 ===================================
 
 注意：仮想環境のメモリは768M以上で設定
@@ -10,17 +10,17 @@ Shell
 ## Set Up
 ### git clone
 ```
-$ git clone git@github.com:VG-Tech-Dojo/VagrantSunrise2013.git
+$ git clone git@github.com:VG-Tech-Dojo/VagrantSunrise2014.git
 ```
 ### vagrant up
 ```
-$ cd VagrantSunrise2013 
+$ cd VagrantSunrise2014 
 $ vagrant up  
 ```
 ## Login
 ### demouser
 ```
-$ ssh demouser@192.168.56.120
+$ ssh demouser@192.168.56.130
 $ su -
  pass vagrant
 ```
