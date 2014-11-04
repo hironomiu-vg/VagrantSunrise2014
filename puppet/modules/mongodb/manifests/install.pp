@@ -8,8 +8,7 @@ class mongodb::install{
 
     package{
         [
-        'mongo-10gen',
-        'mongo-10gen-server',
+        'mongodb-org',
         ]:
         ensure => installed,
         require => Yumrepo['mongodb-repo'],
