@@ -19,7 +19,7 @@ class demouser::config{
         require => User["demouser"]
     }
 
-    file { '/home/demouser/sunrise':
+    file { '/home/demouser/web-performance-tuning':
         ensure => directory,
         owner => 'demouser',
         group => 'demogroup',
@@ -27,12 +27,12 @@ class demouser::config{
         require => User["demouser"]
     }
 
-    file { '/home/demouser/sunrise/public_html':
+    file { '/home/demouser/web-performance-tuning/public_html':
         ensure => directory,
         owner => 'demouser',
         group => 'demogroup',
         mode => '0755',
-        require => File["/home/demouser/sunrise"]
+        require => File["/home/demouser/web-performance-tuning"]
     }
 
     exec { "passwd" :

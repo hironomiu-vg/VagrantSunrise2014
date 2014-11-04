@@ -8,7 +8,7 @@ Vagrant.configure("2") do |config|
 
   config.vm.provider :virtualbox do |vb|
     vb.name = "Sunrise2014"
-    vb.customize ["modifyvm", :id, "--memory", "768"]
+    vb.customize ["modifyvm", :id, "--memory", "1024"]
   end
 
   config.vm.provision :puppet, :options => '--modulepath="/vagrant/puppet/modules":"/vagrant/puppet/roles"' do |puppet|
