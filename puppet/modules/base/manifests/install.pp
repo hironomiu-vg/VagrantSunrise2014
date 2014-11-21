@@ -16,6 +16,8 @@ class base::install{
         'make',
         'git',
         'dstat',
+        'sysstat',
+        'perf',
         'siege',
         ]:
         ensure => installed,
